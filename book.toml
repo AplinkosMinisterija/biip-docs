@@ -1,0 +1,11 @@
+[book]
+authors = ["BĮIP"]
+language = "lt"
+multilingual = false
+src = "src"
+title = "BĮIP dokumentacija"
+
+[output.html]
+curly-quotes = true
+git-repository-url = "https://github.com/AplinkosMinisterija/biip-docs"
+edit-url-template = "https://github.com/AplinkosMinisterija/biip-docs/edit/main/{path}"

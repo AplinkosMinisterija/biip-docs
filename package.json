@@ -1,0 +1,12 @@
+{
+  "name": "developers-handbook",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mdbook build",
+    "serve": "mdbook serve",
+    "watch": "mdbook watch"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
