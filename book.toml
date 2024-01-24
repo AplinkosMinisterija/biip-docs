@@ -5,7 +5,11 @@ multilingual = false
 src = "src"
 title = "BĮIP dokumentacija"
 
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
 [output.html]
 curly-quotes = true
+additional-js = ["static/mermaid.min.js", "static/mermaid-init.js"]
 git-repository-url = "https://github.com/AplinkosMinisterija/biip-docs"
 edit-url-template = "https://github.com/AplinkosMinisterija/biip-docs/edit/main/{path}"
