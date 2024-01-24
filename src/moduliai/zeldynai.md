@@ -4,4 +4,4 @@
 
 **Tikslas** – siekiama didinti visuomenės informuotumą apie planuojamus kirsti, perkelti ar intensyviai genėti saugotinus želdinius ar želdynus, jų būklės ekspertizę.
 
-Informacija prieinama svetainėje adresu: https://zeldynai.biip.lt
+Informacija prieinama svetainėje adresu: [zeldynai.biip.lt](https://zeldynai.biip.lt)
