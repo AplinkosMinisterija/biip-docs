@@ -2,14 +2,6 @@
 
 Informacinė sistema skirta rinkti, kaupti ir dalintis informacija apie Lietuvoje aptinkamas invazines rūšis. Sistema suteikia galimybę vartotojams susipažinti su Lietuvoje ir Europos Sąjungoje įtrauktomis invazinėmis rūšimis, kurios turi būti naikinamos. Prisijungę asmenys ir identifikavę save per elektroninius valdžios vartus gali pateikti anketas apie pastebėtas invazines rūšis.
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 ## Tikslai
 
 - Suteikti galimybę asmenims teikti informaciją apie pastebėtas invazines rūšis.
