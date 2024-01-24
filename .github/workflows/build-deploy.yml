@@ -19,12 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: Swatinem/rust-cache@v2
+      - name: Restore cache
+        uses: Swatinem/rust-cache@v2
 
       - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v1
-        with:
-          mdbook-version: 0.4.36
+        run: cargo install mdbook mdbook-mermaid
 
       - name: Setup Pages
         id: pages
