@@ -9,6 +9,7 @@ visuomene["👤 Visuomenė"]
 tiekejas["👤 Duomenų gavėjas"]
 gavejas["👤 Duomenų tiekėjas"]
 
+subgraph "Biologinės įvairovės informacinė platforma"
 subgraph admin["BĮIP vidinis portalas"]
   biip_admin_web["Administravimo aplinka: vidinė dalis"]
 end
@@ -20,6 +21,7 @@ subgraph web["BĮIP išorinis portalas"]
   biip_medziokle_mobile["Medžioklės žurnalas: Android ir iOS programėlė"]
   biip_gyvunai_web["Nelaisvėje laikomų laukinių gyvūnų informacinė sistema: vidinė dalis"]
   biip_uetk_web["Upių, ežerų ir tvenkinių kadastras (UETK): vidinė dalis"]
+  biip_rusys_web["Rūšių stebėjimo informacinė sistema: vidinė dalis"]
 end
 
 subgraph public["BĮIP viešasis portalas"]
@@ -55,7 +57,19 @@ mariadb[("MariaDB")]
 redis[("Redis")]
 s3[("S3")]
 qgis["QGIS serveris"]
+vt["Vector Tiles"]
+end
 
+subgraph remote["IS, registrai ir kadastrai"]
+    viisp["VIISP"]
+%%    alis["ALIS"]
+%%    adresu_registras["Adresų registras"]
+%%    sris_kadastras["Saugomų teritorijų kadastras"]
+%%    misku_kadastras["Miškų valstybės kadastras"]
+%%    geoportalas["Geoportalas"]
+%%    nekilnojamo_kadastras["Nekilnojamo turto kadastras"]
+%%    uetk["UETK"]
+end
 
 am --> qgis
 am --> admin
@@ -76,6 +90,8 @@ api --> mariadb
 api --> redis
 api --> s3
 api --> qgis
+api --> vt
+api --> remote
 
 qgis --> postgresql
 
