@@ -51,6 +51,7 @@ graph LR
       s3[("S3")]
       qgis["QGIS serveris"]
 
+      api --> postgresql
 
     am["👤 AM darbuotojas"]
 
