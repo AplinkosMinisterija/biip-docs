@@ -2,7 +2,6 @@
 
 Welcome to the official documentation for the BĮIP project.
 
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/AplinkosMinisterija/biip-docs/badge)](https://securityscorecards.dev/viewer/?platform=github.com&org={AplinkosMinisterija}&repo={biip-docs})
 [![License](https://img.shields.io/github/license/AplinkosMinisterija/biip-docs)](https://github.com/AplinkosMinisterija/biip-docs/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/AplinkosMinisterija/biip-docs)](https://github.com/AplinkosMinisterija/biip-docs/issues)
 [![GitHub stars](https://img.shields.io/github/stars/AplinkosMinisterija/biip-docs)](https://github.com/AplinkosMinisterija/biip-docs/stargazers)
@@ -50,6 +49,10 @@ To use the documentation:
 ### Preview
 
 Each commit automatically creates a new preview environment on pull requests to the `main` branch.
+
+### Production
+
+Each commit to `main` branch automatically creates deployment to production environment.
 
 ## Contributing
 
