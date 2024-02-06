@@ -3,12 +3,7 @@ name: Build and deploy
 on:
   push:
     branches: [ "main" ]
-
-  workflow_dispatch:
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  pull_request:
 
 jobs:
   build:
@@ -33,11 +28,54 @@ jobs:
         run: mdbook build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./book
 
-  # Deployment job
+  deploy-preview:
+    name: Deploy preview
+    runs-on: ubuntu-latest
+    if: github.event_name != 'push'
+    needs: build
+    permissions:
+      contents: read
+      deployments: write
+      pull-requests: write
+    steps:
+      - name: Download WEB artefact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+
+      - name: Untar WEB artefact
+        run: tar -xf artifact.tar --one-top-level
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        id: cloudflare
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: biip-docs
+          directory: artifact
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: '3'
+
+      - name: Comment deploy url
+        uses: mshick/add-pr-comment@v2
+        with:
+          message-id: cloudflare-deploy
+          message: |
+            ### <span aria-hidden="true">✅</span> Deploy Preview ready!
+
+            |  Name | Link |
+            |---------------------------------|------------------------|
+            |<span aria-hidden="true">🔨</span> Latest commit | ${{ github.sha }} |
+            |<span aria-hidden="true">🔍</span> Latest deploy log | ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} |
+            |<span aria-hidden="true">😎</span> Deploy Preview Url | [${{ steps.cloudflare.outputs.url }}](${{ steps.cloudflare.outputs.url }}) |
+            |<span aria-hidden="true">🌳</span> Environment | ${{ steps.cloudflare.outputs.environment }} |
+            ---
+
   deploy:
     name: Deploy
     environment:
@@ -45,11 +83,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    if: github.event_name == 'push'
     permissions:
       contents: read
+      actions: read
       pages: write
       id-token: write
+    concurrency:
+      group: pages
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
