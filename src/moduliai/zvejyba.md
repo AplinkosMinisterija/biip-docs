@@ -4,10 +4,15 @@
 **Tikslas** – užtikrinti efektyvų verslinės žvejybos operacijų valdymą ir sekti žuvų išteklių būklę, taip prisidedant prie darnios ir tvarios žuvininkystės.
 
 **Auditorija** - ši informacinė sistema yra sukurta verslo žvejybos operatoriams, vykdančiams žvejybą Kuršių mariose ir vidaus vandenyse.
+
+**Kaupiami duomenys** - verslinės žvejybos žurnalo duomenys (žvejyboje naudojami įrankiai ir sugautų žuvų rūšys bei kiekiai), verslinės žvejybos naudotojai, žuvų išteklių mokslinių tyrimų duomenys.
+
 ## Sistemą sudarančios aplinkos
 
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [zuvys.biip.lt](https://zuvys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Žvejyba, bei Naudotojų valdymas (administruoti sistemos administratoriams bei naudotojams)
+
+**Aplikacijos dizaino failai** - [Verslinės žvejybos aplikacija XD Formatu](src/design/Žvejyba-newversion.xd), [Verslinės žvejybos administratoriaus aplinka](src/design/Žvejyba%20-%20ADMIN.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 
