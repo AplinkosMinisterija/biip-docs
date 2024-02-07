@@ -4,10 +4,15 @@
 **Tikslas** – supaprastinti ir efektyvinti žuvų įveisimo procesą Lietuvoje.
 
 **Auditorija** - ši informacinė sistema yra skirta asmenims, kurie privalo žuvinti Lietuvos vandens telkinius įstatymo nustatyta tvarka. 
+
+**Kaupiami duomenys** - žuvinimo registracijos ir įžuvinimo fakto duomenys (įžuvinamų žuvų rūšys bei kiekiai), žuvų įveisimo naudotojai.
+
 ## Sistemą sudarančios aplinkos
 
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [zuvys.biip.lt](https://zuvys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Žuvinimas, bei Naudotojų valdymas (administruoti sistemos administratoriams bei naudotojams)
+
+**Aplikacijos dizaino failai** - [Žuvų įveisimo aplikacija XD Formatu](src/design/Žuvinimas%20-%20ADMIN.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 
