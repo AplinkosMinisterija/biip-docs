@@ -5,11 +5,15 @@ Saugomų rūšių informacinė sistema (SRIS) skirta palengvinti bei paspartinti
 
 **Auditorija** - ši sistema yra skirta visiems Lietuvos gyventojams ir valstybės institucijoms, siekiant išsaugoti saugomas rūšis ir užtikrinti jų išlikimą vykdant kitą ūkinę veiklą.
 
-## Sistemą sudaro trys aplinkos:
+**Kaupiami duomenys** - saugomų rūšių duomenys ir jų stebėjimo anketos, augaviečių bei radaviečių duomenys, naudotojų duomenys.
+
+## Sistemą sudarančios aplinkos:
 
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [sris.biip.lt](https://sris.biip.lt)
 - Aplinka skirta autentifikuotiems asmenims pateikti bei gauti informaciją apie saugomas rūšis. Taip pat aplinka skirta saugomas rūšių tikrintojams. Tiesioginis adresas: [rusys.biip.lt](https://rusys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Rūšių stebėjimas, bei Naudotojų valdymas(administruoti rūšių sistemos administratoriams bei naudotojams)
+
+**Aplikacijos dizaino failai** - [Saugomų rūšių informacinė sistema XD formatu](src/design/Rusiu%20stebejimas.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 - Teikia anketą apie saugomas rūšį;
