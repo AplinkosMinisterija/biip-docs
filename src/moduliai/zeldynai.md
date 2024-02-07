@@ -4,4 +4,6 @@
 
 **Tikslas** – siekiama didinti visuomenės informuotumą apie planuojamus kirsti, perkelti ar intensyviai genėti saugotinus želdinius ar želdynus, jų būklės ekspertizę.
 
+**Kaupiami duomenys** - planuojamų kirsti, perkelti ar intensyviai genėti saugotinų želdynų, želdinių duomenis.
+
 Informacija prieinama svetainėje adresu: [zeldynai.biip.lt](https://zeldynai.biip.lt)
