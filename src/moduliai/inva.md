@@ -2,21 +2,19 @@
 
 Informacinė sistema skirta rinkti, kaupti ir dalintis informacija apie Lietuvoje aptinkamas invazines rūšis. Sistema suteikia galimybę vartotojams susipažinti su Lietuvoje ir Europos Sąjungoje įtrauktomis invazinėmis rūšimis, kurios turi būti naikinamos. Prisijungę asmenys ir identifikavę save per elektroninius valdžios vartus gali pateikti anketas apie pastebėtas invazines rūšis.
 
-## Tikslai
+**Tikslas** – suteikti galimybę asmenims teikti informaciją apie pastebėtas invazines rūšis, suteikti galimybę gauti išrašą apie tam tikroje teritorijoje esančias invazines rūšis, suteikti galimybę susipažinti su invazinėmis rūšimis, kurios įtrauktos į Lietuvos arba Europos sąjungos sąrašus, ir būdais kaip jas naikinti.
 
-- Suteikti galimybę asmenims teikti informaciją apie pastebėtas invazines rūšis.
-- Suteikti galimybę gauti išrašą apie tam tikroje teritorijoje esančias invazines rūšis.
-- Suteikti galimybę susipažinti su invazinėmis rūšimis, kurios įtrauktos į Lietuvos arba Europos sąjungos sąrašus, ir būdais kaip jas naikinti.
+**Auditorija** - ši sistema skirta visiems Lietuvos gyventojams, valstybės institucijoms, kurios rengia planus ir priemones invazinių rūšių naikinimui. Pagrindinė auditorija yra valstybinės institucijos, kurios gavusios išrašą galės planuotis kur ir kaip naikinti invazines rūšis.
 
-## Auditorija
+**Kaupiami duomenys** - invazinių rūšių duomenys ir jų stebėjimo anketos, augaviečių bei radaviečių duomenys, naudotojų duomenys.
 
-Ši sistema skirta visiems Lietuvos gyventojams, valstybės institucijoms, kurios rengia planus ir priemones invazinių rūšių naikinimui. Pagrindinė auditorija yra valstybinės institucijos, kurios gavusios išrašą galės planuotis kur ir kaip naikinti invazines rūšis.
-
-## Sistemą sudaro trys aplinkos:
+## Sistemą sudarančios aplinkos
 
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [inva.biip.lt](https://inva.biip.lt)
 - Aplinka skirta autentifikuotiems asmenims pateikti bei gauti informaciją apie invazines rūšis. Taip pat aplinka skirta invazinių rūšių tikrintojams. Tiesioginis adresas: [rusys.biip.lt](https://rusys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Rūšių stebėjimas, bei Naudotojų valdymas(administruoti rūšių sistemos administratoriams bei naudotojams)
+
+**Aplikacijos dizaino failai** - [Saugomų/Invazinių rūšių informacinė sistema XD formatu](src/design/Rusiu%20stebejimas.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 - Teikia anketą apie invazinę rūšį;
