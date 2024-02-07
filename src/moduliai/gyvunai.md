@@ -5,10 +5,14 @@ Nelaisvėje laikomų laukinių gyvūnų informacinė sistema skirta rinkti, kaup
 
 **Auditorija** -  ši informacinė sistema skirta asmenims, turintiems leidimą laikyti nelaisvėje laukinius gyvūnus, bei privalantiems teikti informaciją apie juos.
 
+**Kaupiami duomenys** - nelaisvėje laikomų gyvūnų žurnalo duomenys, globojamų laukinių gyvūnų žurnalo duomenys, laukinių gyvūnų laikytojų duomenys, išduotų leidimų duomenys.
+
 ## Sistemą sudarančios aplinkos
 
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [gyvunai.biip.lt](https://gyvunai.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis NLLG, bei Naudotojų valdymas (administruoti sistemos administratoriams bei naudotojams)
+
+**Aplikacijos dizaino failai** - [Laukinių gyvūnų informacinė sistema XD formatu](src/design/Gyvūnai(laikytojai+admin).xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 
