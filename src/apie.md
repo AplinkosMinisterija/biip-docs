@@ -5,7 +5,7 @@ Biologinės įvairovės informacinė sistema(BĮIP) - skaitmeninių duomenų tva
 **Projekto tikslas** – sukurti informacijos apie biologinę įvairovę rinkimo, tvarkymo, analizės bei pateikimo visuomenei informacinę platformą, užtikrinančią biologinės įvairovės išsaugojimą, atkūrimą ir objektyviais rodikliais paremtų aplinkosauginių sprendimų priėmimą.
 
 **Projekto funkcinė schema**<br>
-Peržiūrėkite projekto funkcinę schemą čia: [Projekto funkcinė schema](./schema.md).
+Peržiūrėkite projekto funkcinę schemą čia: [Projekto funkcinė schema](schema.md).
 
 
 
