@@ -14,7 +14,7 @@ Informacinė sistema skirta rinkti, kaupti ir dalintis informacija apie Lietuvoj
 - Aplinka skirta autentifikuotiems asmenims pateikti bei gauti informaciją apie invazines rūšis. Taip pat aplinka skirta invazinių rūšių tikrintojams. Tiesioginis adresas: [rusys.biip.lt](https://rusys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Rūšių stebėjimas, bei Naudotojų valdymas(administruoti rūšių sistemos administratoriams bei naudotojams)
 
-**Aplikacijos dizaino failai** - [Saugomų/Invazinių rūšių informacinė sistema XD formatu](design/rusiu_stebejimas.xd), [Vidiniai naudotojai](design/vidiniai_naudotojai.xd)
+**Aplikacijos dizaino failai** - [Saugomų/Invazinių rūšių informacinė sistema XD formatu](../design/rusiu_stebejimas.xd), [Vidiniai naudotojai](../design/vidiniai_naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 - Teikia anketą apie invazinę rūšį;
