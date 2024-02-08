@@ -13,7 +13,7 @@ Saugomų rūšių informacinė sistema (SRIS) skirta palengvinti bei paspartinti
 - Aplinka skirta autentifikuotiems asmenims pateikti bei gauti informaciją apie saugomas rūšis. Taip pat aplinka skirta saugomas rūšių tikrintojams. Tiesioginis adresas: [rusys.biip.lt](https://rusys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Rūšių stebėjimas, bei Naudotojų valdymas(administruoti rūšių sistemos administratoriams bei naudotojams)
 
-**Aplikacijos dizaino failai** - [Saugomų rūšių informacinė sistema XD formatu](src/design/Rusiu%20stebejimas.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
+**Aplikacijos dizaino failai** - [Saugomų rūšių informacinė sistema XD formatu](design/Rusiu%20stebejimas.xd), [Vidiniai naudotojai](design/Vidiniai%20naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 - Teikia anketą apie saugomas rūšį;
