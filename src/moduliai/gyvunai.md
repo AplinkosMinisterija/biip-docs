@@ -12,7 +12,7 @@ Nelaisvėje laikomų laukinių gyvūnų informacinė sistema skirta rinkti, kaup
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [gyvunai.biip.lt](https://gyvunai.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis NLLG, bei Naudotojų valdymas (administruoti sistemos administratoriams bei naudotojams)
 
-**Aplikacijos dizaino failai** - [Laukinių gyvūnų informacinė sistema XD formatu](design/gyvunai_laikytojai_admin.xd), [Vidiniai naudotojai](design/vidiniai_naudotojai.xd)
+**Aplikacijos dizaino failai** - [Laukinių gyvūnų informacinė sistema XD formatu](../design/gyvunai_laikytojai_admin.xd), [Vidiniai naudotojai](../design/vidiniai_naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 
