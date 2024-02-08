@@ -13,3 +13,4 @@
     - [Gamtotvarka](moduliai/gamtotvarka.md)
     - [Želdiniai ir želdynai](moduliai/zeldynai.md)
     - [Ekosistemos](moduliai/ekosistemos.md)
+    - [Projekto schema](schema.md)

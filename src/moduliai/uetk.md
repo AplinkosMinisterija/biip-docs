@@ -10,7 +10,7 @@ Lietuvos Respublikos upių, ežerų ir tvenkinių kadastras (UETK) yra valstybė
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [uetk.biip.lt](https://uetk.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis UETK, bei Naudotojų valdymas(administruoti UETK sistemos administratoriams bei naudotojams)
 
-**Aplikacijos dizaino failai** - [UETK dizainas XD Formatu](src/design/UETK.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
+**Aplikacijos dizaino failai** - [UETK dizainas XD Formatu](../design/uetk.xd), [Vidiniai naudotojai](../design/vidiniai_naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 
