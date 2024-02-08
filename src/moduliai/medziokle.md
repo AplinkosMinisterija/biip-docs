@@ -14,7 +14,7 @@ Medžioklės informacinė sistema skirta rinkti, kaupti, analizuoti ir saugoti s
 - Mobili aplikacija - skirta medžiotojams planuoti savo medžiokles, bei pildyti informaciją apie sumedžiotus gyvūnus, pildyti prašymą medžiojamų gyvūnų sumedžiojimo limitų suteikimui. [Google play](https://play.google.com/store/apps/details?id=com.mobile_medziotojas&pli=1), [App store](https://apps.apple.com/us/app/med%C5%BEiokl%C4%97s-%C5%BEurnalas/id1637595597)
 - WEb aplikacija - skirta medžiotojamas planuoti, bei peržiūrėti informaciją apie sumedžiotus gyvūnus, pildyti prašymą medžiojamų gyvūnų sumedžiojimo limitų suteikimui. [medziokle.biip.lt/app](https://medziokle.biip.lt/app)
 
-**Aplikacijos dizaino failai** - [Medžioklės web aplikacija XD Formatu](src/design/Medziokle%20-%20Admin.xd), [Medžioklės administratoriaus aplinka](src/design/Medziokle%20-%20WEB%20APP.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
+**Aplikacijos dizaino failai** - [Medžioklės web aplikacija XD Formatu](design/Medziokle%20-%20Admin.xd), [Medžioklės administratoriaus aplinka](design/Medziokle%20-%20WEB%20APP.xd), [Vidiniai naudotojai](design/Vidiniai%20naudotojai.xd)
 
 ### Neautentifikuoto naudotojo funkcijos
 
