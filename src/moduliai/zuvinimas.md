@@ -12,7 +12,7 @@
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [zuvys.biip.lt](https://zuvys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Žuvinimas, bei Naudotojų valdymas (administruoti sistemos administratoriams bei naudotojams)
 
-**Aplikacijos dizaino failai** - [Žuvų įveisimo aplikacija XD Formatu](design/Žuvinimas%20-%20ADMIN.xd), [Vidiniai naudotojai](design/Vidiniai%20naudotojai.xd)
+**Aplikacijos dizaino failai** - [Žuvų įveisimo aplikacija XD Formatu](design/zuvinimas_admin.xd), [Vidiniai naudotojai](design/vidiniai_naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 
