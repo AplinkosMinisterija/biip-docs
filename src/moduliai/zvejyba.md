@@ -12,7 +12,7 @@
 - WordPress sistema - skirta administratoriams valdantiems svetainės turinį ir atvaizdavimą. Adresas išoriniams naudotojams: [zuvys.biip.lt](https://zuvys.biip.lt)
 - Aplinka skirta sistemos administratoriams. Adresas administratoriams: [admin.biip.lt](https://admin.biip.lt), modulis Žvejyba, bei Naudotojų valdymas (administruoti sistemos administratoriams bei naudotojams)
 
-**Aplikacijos dizaino failai** - [Verslinės žvejybos aplikacija XD Formatu](src/design/Žvejyba-newversion.xd), [Verslinės žvejybos administratoriaus aplinka](src/design/Žvejyba%20-%20ADMIN.xd), [Vidiniai naudotojai](src/design/Vidiniai%20naudotojai.xd)
+**Aplikacijos dizaino failai** - [Verslinės žvejybos aplikacija XD Formatu](design/Žvejyba-newversion.xd), [Verslinės žvejybos administratoriaus aplinka](design/Žvejyba%20-%20ADMIN.xd), [Vidiniai naudotojai](design/Vidiniai%20naudotojai.xd)
 
 ### Autentifikuoto naudotojo funkcijos
 
