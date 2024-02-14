@@ -4,23 +4,23 @@
 
 ### Infrastruktūra
 
-1. GitHub: naudojamas kodo saugojimui, artefaktų valdymui, projektų valdymui (_GitHub Projects_) ir automatizacijų
+1. **GitHub**: naudojamas kodo saugojimui, artefaktų valdymui, projektų valdymui (_GitHub Projects_) ir automatizacijų
    vykdymui (_GitHub Actions_);
-2. Docker ir Docker compose: naudojami konteinerių paleidimui ir valdymui virtualiose mašinose;
-3. Git-crypt ir GitHub Actions Secrets: paslapčių (angl. _secrets_) valdymui;
-4. Postgres su Postgis: kaip pagrindinė duomenų bazė;
-5. MariaDB: duomenų bazė, naudojama WordPress;
-6. Redis: spartinančioji atmintinė (angl. _cache_) ir eilių valdymas;
-7. S3: failų saugykla (naudojant VITC teikiamą paslaugą;
-8. Caddy: atvirkštinis tarpinis serveris (angl. _reverse proxy_);
-9. Better Stack Uptime: prieinamumo stebėsena;
-10. Sentry: klaidų ir greitaveikos stebėsena;
-11. Grafana, Prometheus, Loki, AlertManager: stebėsena ir žurnalo įrašų kaupimas;
-12. Zabbix: virtualių mašinų stebėsena;
-13. PostMark: elektroninių laiškų siuntimas;
-14. Google Analytics: svetainių lankomumo stebėsena;
-15. QGIS: geoerdvinių duomenų apdorojimas, peržiūra ir analizė;
-16. Martin: geoerdvinių vektorinių duomenų generavimas;
+2. **Docker ir Docker compose**: naudojami konteinerių paleidimui ir valdymui virtualiose mašinose;
+3. **Git-crypt ir GitHub Actions Secrets**: paslapčių (angl. _secrets_) valdymui;
+4. **Postgres su Postgis**: kaip pagrindinė duomenų bazė;
+5. **MariaDB**: duomenų bazė, naudojama WordPress;
+6. **Redis**: spartinančioji atmintinė (angl. _cache_) ir eilių valdymas;
+7. **S3**: failų saugykla (naudojant VITC teikiamą paslaugą;
+8. **Caddy**: atvirkštinis tarpinis serveris (angl. _reverse proxy_);
+9. **Better Stack Uptime**: prieinamumo stebėsena;
+10. **Sentry**: klaidų ir greitaveikos stebėsena;
+11. **Grafana, Prometheus, Loki, AlertManager**: stebėsena ir žurnalo įrašų kaupimas;
+12. **Zabbix**: virtualių mašinų stebėsena;
+13. **PostMark**: elektroninių laiškų siuntimas;
+14. **Google Analytics**: svetainių lankomumo stebėsena;
+15. **QGIS**: geoerdvinių duomenų apdorojimas, peržiūra ir analizė;
+16. **Martin**: geoerdvinių vektorinių duomenų generavimas;
 
 ### API (angl. _Application Programming Interface_)
 
@@ -48,8 +48,9 @@ Naudojamos VITC teikiamos ir valdomos virtualios mašinos.
 
 ## Diegimo procesas
 
-Visi BĮIP atliekami diegimai yra automatizuoti naudojant GitHub actions. Detalesnį BĮIP diegimo procesą iliustruoja ši
-schema:
+Visi BĮIP atliekami diegimai yra automatizuoti naudojant GitHub actions.
+
+### Diegimo žingsniai
 
 ```mermaid
 ---
@@ -70,8 +71,6 @@ flowchart TD
     app2 --> infra
 ```
 
-### Diegimo žingsniai
-
 1. **Automatinis testavimas:**
     * BĮIP projekto dalis automatiškai testuojama naudojant GitHub Actions (pvz., automatiniai testai, statinė kodo
       analizė su CodeQL, viešai žinomus pažeidžiamumų analizė);
@@ -80,7 +79,6 @@ flowchart TD
       paruošiamas Docker image;
     * Docker image patalpinamas ghcr.io registre.
 3. **Aplinkos diegimas:**
-    * Centrinėje BĮIP infrastruktūros konfigūracijos repizitorijoje per docker compose atitinkamoje virtualioje mašinoje
-      paleidžiama
-      atnaujinta diegiama BĮIP projekto dalis;
-    * Centrinė BĮIP infrastruktūros konfigūracijos repozitorija sukurta remiantis GitOps praktika;
+    * Centrinėje BĮIP infrastruktūros konfigūracijos repozitorijoje, naudojant Docker Compose, paleidžiama atnaujinta
+      BĮIP projekto dalis atitinkamoje virtualioje mašinoje;
+    * Centrinė BĮIP infrastruktūros konfigūracijos repozitorija remiasi GitOps praktikomis;
