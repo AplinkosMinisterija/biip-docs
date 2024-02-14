@@ -28,9 +28,10 @@ Node.js su [Moleculer](https://moleculer.services/) sistema.
 
 ### Kliento dalis
 
-1. React ir Vue: interaktyvioms naudotojų sąsajoms;
-2. WordPress: turinio valdymo sistema;
-3. Medžioklės žurnalas mobilioji programėlė naudoja React-Native ir Fastlane diegimų automatizacijoms;
+1. React: visoms kliento sąsajoms;
+2. Vue: žemėlapių naršyklės kliento sąsajos;
+3. WordPress: turinio valdymo sistema;
+4. Medžioklės žurnalas mobilioji programėlė naudoja React-Native ir Fastlane diegimų automatizacijoms;
 
 ## Virtualios mašinos
 
