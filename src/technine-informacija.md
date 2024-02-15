@@ -7,12 +7,13 @@
 1. **GitHub**: naudojamas kodo saugojimui, artefaktų valdymui, projektų valdymui (_GitHub Projects_) ir automatizacijų
    vykdymui (_GitHub Actions_);
 2. **Docker ir Docker compose**: naudojami konteinerių paleidimui ir valdymui virtualiose mašinose;
-3. **Git-crypt ir GitHub Actions Secrets**: paslapčių (angl. _secrets_) valdymui;
-4. **Postgres su Postgis**: kaip pagrindinė duomenų bazė;
+3. **Git-crypt ir GitHub Actions Secrets**: jautrių duomenų (angl. _secrets_) valdymui;
+4. **Postgres su Postgis**: pagrindinė duomenų bazė, skirta saugoti geoerdvinius, skaitinius duomenis, kurie naudojami
+   moduliuose;
 5. **MariaDB**: duomenų bazė, naudojama WordPress;
 6. **Redis**: spartinančioji atmintinė (angl. _cache_) ir eilių valdymas;
-7. **S3**: failų saugykla (naudojant VITC teikiamą paslaugą;
-8. **Caddy**: atvirkštinis tarpinis serveris (angl. _reverse proxy_);
+7. **S3**: failų saugykla (naudojama VITC teikiama paslauga);
+8. **Caddy**: atvirkštinis tarpinis žiniatinklio serveris (angl. _reverse proxy_);
 9. **Better Stack Uptime**: prieinamumo stebėsena;
 10. **Sentry**: klaidų ir greitaveikos stebėsena;
 11. **Grafana, Prometheus, Loki, AlertManager**: stebėsena ir žurnalo įrašų kaupimas;
@@ -37,19 +38,19 @@ Node.js su [Moleculer](https://moleculer.services/) sistema.
 
 Naudojamos VITC teikiamos ir valdomos virtualios mašinos.
 
-1. **APP-BĮIP**: veikia bandomosios aplinkos (atitinkamai Development ir Staging), kurias sudaro
+1. **APP-BIIP**: veikia bandomosios aplinkos (atitinkamai Development ir Staging), kurias sudaro
    tiek BĮIP moduliai, tiek tų aplinkų duomenų bazės;
-2. **PROD-BĮIP**: šioje virtualioje mašinoje veikia gamybinė aplinka su visais BĮIP moduliais;
-3. **BU-BĮIP**: virtualioje mašinoje veikia duomenų bazės naudojamos gamybinėje aplinkoje (pvz., Postgres su PostGIS ir
-   MariaDB);
-4. **INFRA-BĮIP**: veikia įvairūs BĮIP infrastruktūriniai įrankiai, tokie
+2. **PROD-BIIP**: šioje virtualioje mašinoje veikia gamybinė aplinka su visais BĮIP moduliais;
+3. **BU-BIIP**: šioje virtualioje mašinoje testuojamos ir saugomos BU-BIIP mašinos duomenų bazių (PostgresSQL ir
+   MariaDB) atsarginės kopijos;
+4. **INFRA-BIIP**: veikia įvairūs BĮIP infrastruktūriniai įrankiai, tokie
    kaip [Sentry](https://sentry.io/), [GitHub self-hosted](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
    agentas;
-5. **BACKUP-BĮIP**: ši virtuali mašina naudojama atsarginėms kopijoms, pvz., duomenų bazių;
+5. **BACKUP-BIIP**: ši virtuali mašina naudojama atsarginėms kopijoms, pvz., duomenų bazių;
 
 ## Diegimo procesas
 
-Visi BĮIP atliekami diegimai yra automatizuoti naudojant GitHub actions.
+BĮIP modulių diegimai yra automatizuoti naudojant GitHub actions.
 
 ### Diegimo žingsniai
 
@@ -57,7 +58,6 @@ Visi BĮIP atliekami diegimai yra automatizuoti naudojant GitHub actions.
 ---
 title: BĮIP diegimo procesas
 ---
-%%{init: {'theme':'neutral'}}%%
 flowchart TD
     subgraph app1["BĮIP modulio dalis 1"]
         a1["Automatinis testavimas"] --> a2["Docker image paruošimas"]
