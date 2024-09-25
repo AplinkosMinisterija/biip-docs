@@ -15,6 +15,8 @@ Saugomų rūšių informacinė sistema (SRIS) skirta palengvinti bei paspartinti
 
 **Aplikacijos dizaino failai** - [Saugomų rūšių informacinė sistema XD formatu](../design/rusiu_stebejimas.xd), [Vidiniai naudotojai](../design/vidiniai_naudotojai.xd)
 
+**Duomenų bazės struktūra** - [Duomenų bazės struktūra](../docs/rusiu_duomenu_bazes_struktura.pdf)
+
 ### Autentifikuoto naudotojo funkcijos
 - Teikia anketą apie saugomas rūšį;
 - Teikia prašymą gauti duomenis apie saugomas rūšis;
