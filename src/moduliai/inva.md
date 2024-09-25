@@ -16,6 +16,9 @@ Informacinė sistema skirta rinkti, kaupti ir dalintis informacija apie Lietuvoj
 
 **Aplikacijos dizaino failai** - [Saugomų/Invazinių rūšių informacinė sistema XD formatu](../design/rusiu_stebejimas.xd), [Vidiniai naudotojai](../design/vidiniai_naudotojai.xd)
 
+**Duomenų bazės struktūra** - [Duomenų bazės struktūra](../docs/rusiu_duomenu_bazes_struktura.pdf)
+
+
 ### Autentifikuoto naudotojo funkcijos
 - Teikia anketą apie invazinę rūšį;
 - Teikia prašymą gauti duomenis apie invazines rūšis;
