@@ -9,12 +9,12 @@ visuomene["👤 Visuomenė"]
 tiekejas["👤 Duomenų gavėjas"]
 gavejas["👤 Duomenų tiekėjas"]
 
-subgraph "Biologinės įvairovės informacinė platforma"
-subgraph admin["BĮIP vidinis portalas"]
+subgraph "Biologinės įvairovės informacinė sistema"
+subgraph admin["BĮIS vidinis portalas"]
   biip_admin_web["Administravimo aplinka: vidinė dalis"]
 end
 
-subgraph web["BĮIP išorinis portalas"]
+subgraph web["BĮIS išorinis portalas"]
   all_web["Įžuvinimų sistema: vidinė dalis
   Verslinė žvejyba: vidinė dalis
   Medžioklės informacinė sistema: vidinė dalis
@@ -24,7 +24,7 @@ subgraph web["BĮIP išorinis portalas"]
   Rūšių stebėjimo informacinė sistema: vidinė dalis"]
 end
 
-subgraph public["BĮIP viešasis portalas"]
+subgraph public["BĮIS viešasis portalas"]
   all_public["Verslinės žvejybos ir įžuvinimo modulis: vieša dalis
   Žuvų išteklių mokslinių tyrimų duomenys
   Medžioklės informacinė sistema: vieša dalis
@@ -32,14 +32,14 @@ subgraph public["BĮIP viešasis portalas"]
   Rūšių stebėjimo informacinė sistema (INVA): vieša dalis
   Rūšių stebėjimo informacinė sistema (SRIS): vieša dalis
   Upių, ežerų ir tvenkinių kadastras (UETK): vieša dalis
-  BĮIP svetainė
+  BĮIS svetainė
   Ekosisteminės paslaugos
   Gamtotvarka
   Genetiškai modifikuotų organizmų duomenų bazė
   Želdynai"]
 end
 
-subgraph api["BĮIP moduliai"]
+subgraph api["BĮIS moduliai"]
   all_api["Administravimo aplinka: API
   Autentifikavimo ir naudotojų valdymo modulis: API
   Įžuvinimų sistema: API
@@ -50,7 +50,7 @@ subgraph api["BĮIP moduliai"]
   Upių, ežerų ir tvenkinių kadastras (UETK): API
   Žemėlapių naršyklė: vidinė dalis
   Žemėlapių naršyklė: QGIS
-  BĮIP įrankiai: API"]
+  BĮIS įrankiai: API"]
 end
 
 postgresql[("PostgreSQL")]
