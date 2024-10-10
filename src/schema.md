@@ -26,6 +26,7 @@ end
 
 subgraph public["BĮIP viešasis portalas"]
   all_public["Verslinės žvejybos ir įžuvinimo modulis: vieša dalis
+  Žuvų išteklių mokslinių tyrimų duomenys
   Medžioklės informacinė sistema: vieša dalis
   Nelaisvėje laikomų laukinių gyvūnų informacinė sistema: vieša dalis
   Rūšių stebėjimo informacinė sistema (INVA): vieša dalis
