@@ -15,22 +15,22 @@ subgraph admin["BĮIS vidinis portalas"]
 end
 
 subgraph web["BĮIS išorinis portalas"]
-  all_web["Įžuvinimų sistema: vidinė dalis
+  all_web["Įžuvinimų modulis: vidinė dalis
   Verslinė žvejyba: vidinė dalis
-  Medžioklės informacinė sistema: vidinė dalis
+  Medžioklės modulis: vidinė dalis
   Medžioklės žurnalas: Android ir iOS programėlė
-  Nelaisvėje laikomų laukinių gyvūnų informacinė sistema: vidinė dalis
+  Nelaisvėje laikomų laukinių gyvūnų modulis: vidinė dalis
   Upių, ežerų ir tvenkinių kadastras (UETK): vidinė dalis
-  Rūšių stebėjimo informacinė sistema: vidinė dalis"]
+  Rūšių stebėjimo modulis: vidinė dalis"]
 end
 
 subgraph public["BĮIS viešasis portalas"]
   all_public["Verslinės žvejybos ir įžuvinimo modulis: vieša dalis
   Žuvų išteklių mokslinių tyrimų duomenys
-  Medžioklės informacinė sistema: vieša dalis
-  Nelaisvėje laikomų laukinių gyvūnų informacinė sistema: vieša dalis
-  Rūšių stebėjimo informacinė sistema (INVA): vieša dalis
-  Rūšių stebėjimo informacinė sistema (SRIS): vieša dalis
+  Medžioklės modulis: vieša dalis
+  Nelaisvėje laikomų laukinių gyvūnų modulis: vieša dalis
+  Rūšių stebėjimo modulis (INVA): vieša dalis
+  Rūšių stebėjimo modulis (SRIS): vieša dalis
   Upių, ežerų ir tvenkinių kadastras (UETK): vieša dalis
   BĮIS svetainė
   Ekosisteminės paslaugos
@@ -42,11 +42,11 @@ end
 subgraph api["BĮIS moduliai"]
   all_api["Administravimo aplinka: API
   Autentifikavimo ir naudotojų valdymo modulis: API
-  Įžuvinimų sistema: API
+  Įžuvinimų modulis: API
   Verslinė žvejyba: API
-  Medžioklės informacinė sistema: API
-  Nelaisvėje laikomų laukinių gyvūnų informacinė sistema: API
-  Rūšių stebėjimo informacinė sistema: API
+  Medžioklės modulis: API
+  Nelaisvėje laikomų laukinių gyvūnų modulis: API
+  Rūšių stebėjimo modulis: API
   Upių, ežerų ir tvenkinių kadastras (UETK): API
   Žemėlapių naršyklė: vidinė dalis
   Žemėlapių naršyklė: QGIS
