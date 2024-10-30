@@ -20,7 +20,6 @@ subgraph web["BĮIS išorinis portalas"]
   Medžioklės modulis: vidinė dalis
   Medžioklės žurnalas: Android ir iOS programėlė
   Nelaisvėje laikomų laukinių gyvūnų modulis: vidinė dalis
-  Upių, ežerų ir tvenkinių kadastras (UETK): vidinė dalis
   Rūšių stebėjimo modulis: vidinė dalis"]
 end
 
@@ -30,8 +29,6 @@ subgraph public["BĮIS viešasis portalas"]
   Medžioklės modulis: vieša dalis
   Nelaisvėje laikomų laukinių gyvūnų modulis: vieša dalis
   Rūšių stebėjimo modulis (INVA): vieša dalis
-  Rūšių stebėjimo modulis (SRIS): vieša dalis
-  Upių, ežerų ir tvenkinių kadastras (UETK): vieša dalis
   BĮIS svetainė
   Ekosisteminės paslaugos
   Gamtotvarka
@@ -47,7 +44,6 @@ subgraph api["BĮIS moduliai"]
   Medžioklės modulis: API
   Nelaisvėje laikomų laukinių gyvūnų modulis: API
   Rūšių stebėjimo modulis: API
-  Upių, ežerų ir tvenkinių kadastras (UETK): API
   Žemėlapių naršyklė: vidinė dalis
   Žemėlapių naršyklė: QGIS
   BĮIS įrankiai: API"]
@@ -65,11 +61,10 @@ subgraph remote["IS, registrai ir kadastrai"]
     viisp["VIISP"]
 %%    alis["ALIS"]
 %%    adresu_registras["Adresų registras"]
-%%    sris_kadastras["Saugomų teritorijų kadastras"]
+%%    st_kadastras["Saugomų teritorijų kadastras"]
 %%    misku_kadastras["Miškų valstybės kadastras"]
 %%    geoportalas["Geoportalas"]
 %%    nekilnojamo_kadastras["Nekilnojamo turto kadastras"]
-%%    uetk["UETK"]
 end
 
 am --> qgis
