@@ -1,13 +1,13 @@
 ```mermaid
 flowchart-elk
 
-aaa["👤 AAA darbuotojas"]
-aad["👤 AAD darbuotojas"]
-am["👤 AM darbuotojas"]
-vstt["👤 VSTT darbuotojas"]
+aaa["👤 AAA darbuotojai"]
+aad["👤 AAD darbuotojai"]
+am["👤 AM darbuotojai"]
+vstt["👤 VSTT darbuotojai"]
 visuomene["👤 Visuomenė"]
-tiekejas["👤 Duomenų gavėjas"]
-gavejas["👤 Duomenų tiekėjas"]
+tiekejas["👤 Duomenų gavėjai"]
+gavejas["👤 Duomenų teikėjai"]
 
 subgraph "Biologinės įvairovės informacinė sistema"
 subgraph admin["BĮIS vidinis portalas"]
@@ -15,7 +15,7 @@ subgraph admin["BĮIS vidinis portalas"]
 end
 
 subgraph web["BĮIS išorinis portalas"]
-  all_web["Įžuvinimų modulis: vidinė dalis
+  all_web["Žuvų įveisimo modulis: vidinė dalis
   Verslinė žvejyba: vidinė dalis
   Medžioklės modulis: vidinė dalis
   Medžioklės žurnalas: Android ir iOS programėlė
@@ -25,7 +25,7 @@ subgraph web["BĮIS išorinis portalas"]
 end
 
 subgraph public["BĮIS viešasis portalas"]
-  all_public["Verslinės žvejybos ir įžuvinimo modulis: vieša dalis
+  all_public["Verslinės žvejybos ir žuvų įveisimo modulis: vieša dalis
   Žuvų išteklių mokslinių tyrimų duomenys
   Medžioklės modulis: vieša dalis
   Nelaisvėje laikomų laukinių gyvūnų modulis: vieša dalis
@@ -42,7 +42,7 @@ end
 subgraph api["BĮIS moduliai"]
   all_api["Administravimo aplinka: API
   Autentifikavimo ir naudotojų valdymo modulis: API
-  Įžuvinimų modulis: API
+  Žuvų įveisimo modulis: API
   Verslinė žvejyba: API
   Medžioklės modulis: API
   Nelaisvėje laikomų laukinių gyvūnų modulis: API
