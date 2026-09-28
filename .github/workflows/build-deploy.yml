@@ -17,8 +17,14 @@ jobs:
       - name: Restore cache
         uses: Swatinem/rust-cache@v2
 
+      # mdBook 0.5 rejects this book.toml (`multilingual` was removed) and the
+      # mermaid/linkcheck plugins were last verified against 0.4, so pin the
+      # toolchain that builds this book until it is migrated.
       - name: Setup mdBook
-        run: cargo install mdbook mdbook-mermaid mdbook-linkcheck
+        run: |
+          cargo install mdbook --version '^0.4'
+          cargo install mdbook-mermaid --version '^0.16'
+          cargo install mdbook-linkcheck --version '^0.7'
 
       - name: Setup Pages
         id: pages
@@ -50,16 +56,28 @@ jobs:
       - name: Untar WEB artefact
         run: tar -xf artifact.tar --one-top-level
 
+      # cloudflare/pages-action was removed from GitHub in September 2026;
+      # wrangler-action is Cloudflare's replacement. Wrangler is installed in an
+      # empty directory so nothing lands next to the published files.
+      - name: Prepare an isolated Wrangler workspace
+        run: mkdir -p "${RUNNER_TEMP}/wrangler"
+
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v4
         id: cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: biip-docs
-          directory: artifact
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          wranglerVersion: '3'
+          wranglerVersion: '4'
+          packageManager: npm
+          workingDirectory: ${{ runner.temp }}/wrangler
+          command: >-
+            pages deploy ${{ github.workspace }}/artifact
+            --project-name=biip-docs
+            --branch=${{ github.head_ref || github.ref_name }}
+            --commit-hash=${{ github.event.pull_request.head.sha || github.sha }}
+            --commit-dirty=true
 
       - name: Comment deploy url
         uses: mshick/add-pr-comment@v2
@@ -72,8 +90,8 @@ jobs:
             |---------------------------------|------------------------|
             |<span aria-hidden="true">🔨</span> Latest commit | ${{ github.sha }} |
             |<span aria-hidden="true">🔍</span> Latest deploy log | ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} |
-            |<span aria-hidden="true">😎</span> Deploy Preview Url | [${{ steps.cloudflare.outputs.url }}](${{ steps.cloudflare.outputs.url }}) |
-            |<span aria-hidden="true">🌳</span> Environment | ${{ steps.cloudflare.outputs.environment }} |
+            |<span aria-hidden="true">😎</span> Deploy Preview Url | [${{ steps.cloudflare.outputs.deployment-url }}](${{ steps.cloudflare.outputs.deployment-url }}) |
+            |<span aria-hidden="true">🌳</span> Environment | ${{ steps.cloudflare.outputs.pages-environment }} |
             ---
 
   deploy:
